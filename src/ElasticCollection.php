@@ -18,7 +18,7 @@ class ElasticCollection
      * @param array $response
      * @param $instance
      */
-    public function __construct($response, $instance = null)
+    public function __construct($response)
     {
         $this->response = $response;
         $this->instance = new ElasticModel;

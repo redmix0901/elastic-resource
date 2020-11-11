@@ -11,7 +11,7 @@ trait ElasticCollectionTrait
 {
     protected static $elasticCollection;
 
-    public static function fromElasticsearch($response, $instance, $limit = 0)
+    public static function fromElasticsearch($response, $limit = 0)
     {
 
         /**
@@ -25,7 +25,7 @@ trait ElasticCollectionTrait
         /**
          * Khởi tạo elasticsearch collection
          */
-        static::setElasticCollection(new ElasticCollection($response, $instance));
+        static::setElasticCollection(new ElasticCollection($response));
 
         if ($limit) {
             return new static(
