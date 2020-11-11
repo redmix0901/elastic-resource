@@ -7,13 +7,13 @@ use Illuminate\Support\ServiceProvider;
 
 class ElasticResourceProvider extends ServiceProvider
 {
-	/**
+    /**
      * Boot the service provider.
      * @author Tu Tran
      */
     public function boot()
     {
-
+    }
 
     /**
      * Register the service provider.
@@ -22,7 +22,5 @@ class ElasticResourceProvider extends ServiceProvider
      */
     public function register()
     {
-
-        
     }
 }

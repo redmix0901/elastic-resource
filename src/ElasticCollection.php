@@ -6,7 +6,7 @@ use App\Entities\ElasticModel;
 use App\Helpers\ElasticsearchPaginator as Paginator;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
-class ElasticCollection 
+class ElasticCollection
 {
     protected $items;
 
@@ -127,7 +127,6 @@ class ElasticCollection
     public function first()
     {
         if (empty($this->items->first())) {
-
             throw (new ModelNotFoundException)->setModel(get_class($this->instance));
         }
 

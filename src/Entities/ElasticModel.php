@@ -10,5 +10,4 @@ class ElasticModel extends Model
     use BuildFromElasticsearch;
 
     protected $fillable = ['id'];
-
 }

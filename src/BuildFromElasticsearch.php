@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 
 trait BuildFromElasticsearch
-{   
+{
     /**
      * Create a result collection of models from plain elasticsearch result.
      *
@@ -21,10 +21,9 @@ trait BuildFromElasticsearch
 
         $instance = new static;
 
-        return collect($items)->map(function ($item) use ($instance){
+        return collect($items)->map(function ($item) use ($instance) {
             return $instance->newFromHitBuilder($item);
         });
-
     }
 
     /**
