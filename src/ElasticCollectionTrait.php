@@ -47,7 +47,7 @@ trait ElasticCollectionTrait
     /**
      * Set the elastic collection.
      *
-     * @param  App\Collection\ElasticCollection
+     * @param  ElasticCollection
      * @return void
      */
     public static function setElasticCollection(ElasticCollection $elasticCollection)
@@ -58,7 +58,7 @@ trait ElasticCollectionTrait
     /**
      * Get the elastic collection.
      *
-     * @return App\Collection\ElasticCollection
+     * @return ElasticCollection
      */
     public static function getElasticCollection()
     {
