@@ -2,7 +2,7 @@
 
 namespace Redmix0901\ElasticResource;
 
-use App\Collection\ElasticCollection;
+use Redmix0901\ElasticResource\ElasticCollection;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Collection;

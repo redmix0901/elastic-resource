@@ -2,8 +2,8 @@
 
 namespace Redmix0901\ElasticResource;
 
-use App\Entities\ElasticModel;
-use App\Helpers\ElasticsearchPaginator as Paginator;
+use Redmix0901\ElasticResource\Entities\ElasticModel;
+use Redmix0901\ElasticResource\ElasticsearchPaginator as Paginator;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class ElasticCollection

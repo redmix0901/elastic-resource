@@ -1,4 +1,5 @@
 <?php
+
 namespace Redmix0901\ElasticResource;
 
 use Illuminate\Auth\RequestGuard;
