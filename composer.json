@@ -1,0 +1,30 @@
+{
+    "name": "redmix0901/elastic-resource",
+    "description": "Build data elasticsearch to eloquent",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "api",
+        "resource",
+        "laravel",
+        "elasticsearch"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Redmix0901\\ElasticResource\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tran Dinh Tu",
+            "email": "redmix0901@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+          "providers": [
+            "Redmix0901\\ElasticResource\\ElasticResourceProvider"
+          ]
+        }
+    }
+}
