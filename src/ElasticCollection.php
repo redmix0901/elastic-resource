@@ -25,7 +25,6 @@ class ElasticCollection
         $this->items = $this->elasticToModel();
     }
 
-
     /**
      * Builds a list of models from Elasticsearch
      * results.
