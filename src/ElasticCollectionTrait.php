@@ -33,7 +33,7 @@ trait ElasticCollectionTrait
             );
         }
 
-        if (static::class instanceof ResourceCollection) {
+        if (is_a(static::class, ResourceCollection::class, true)) {
             return new static(
                 static::getElasticCollection()->all()
             );
