@@ -13,7 +13,10 @@ trait ElasticCollectionTrait
 
     public static function fromElasticsearch($response, $limit = 0)
     {
-
+        if($response === null){
+            $response = [];
+        }
+        
         /**
          * Kiểm tra nếu $response là 1 collection của model hoặc là 1 model
          * thì sẽ transformers dữ liệu mặc định
