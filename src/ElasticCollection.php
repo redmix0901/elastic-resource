@@ -110,7 +110,7 @@ class ElasticCollection
     {
         if (isset($this->response['aggregations'])) {
             return collect($this->response['aggregations'])->map(function ($item, $key) {
-                return $item['buckets'];
+                return $item['buckets'] ?? $item;
             });
         }
 
